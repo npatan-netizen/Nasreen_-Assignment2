@@ -1,26 +1,18 @@
 # WCB Forms — Assignment 2
 
-This project dynamically loads worker data from a backend JSON file and renders reports using compiled Pug templates directly in the browser.
+A dynamic browser-based application that loads worker data from a backend JSON file and renders professional reports using compiled Pug templates.
 
-## Video Demo
+## Application Design: Two Forms, One Sheet
 
-[Add your video link here]
+A major feature of this project is its **Single Page Application (SPA)** architecture. 
 
-## Form Previews
-
-### Medical Expense Form
-![Medical Expense Page 1](docs/samples/medical-expense-page1.png)
-![Medical Expense Page 2](docs/samples/medical-expense-page2.png)
-
-### Worker Progress Report
-![Worker Progress Page 1](docs/samples/worker-progress-page1.png)
-![Worker Progress Page 2](docs/samples/worker-progress-page2.png)
-![Worker Progress Page 3](docs/samples/worker-progress-page3.png)
-
+Rather than creating separate HTML pages for different forms, **both the "Medical & Travel Expense" form and the "Worker Progress Report" are built into a single sheet (`index.html`).** 
+- A dynamic toolbar at the top of the page allows the user to instantly toggle between the two forms.
+- The JavaScript logic swaps out the pre-compiled Pug templates on the fly without ever needing to reload the page!
 
 ## Architecture & Data Flow
 
-This project uses Pug (formerly Jade) to generate HTML templates.
+This project uses Pug (formerly Jade) to generate HTML templates cleanly and efficiently.
 
 ```mermaid
 graph LR
