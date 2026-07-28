@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WCB Forms — Worker Reports</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="toolbar no-print">
+      <div class="toolbar-group worker-select-wrap">
+        <label for="worker-select">Worker:</label>
+        <select id="worker-select"></select>
+      </div>
+      <div class="toolbar-group">
+        <span class="toolbar-label">Form:</span>
+        <button id="btn-form-medical" type="button">
+          Medical &amp; Travel Expense
+        </button>
+        <button id="btn-form-worker" type="button" class="active">
+          Worker Progress Report
+        </button>
+      </div>
+      <div class="toolbar-group">
+        <button id="print-btn" type="button">Print as PDF</button>
+      </div>
+    </div>
+
+    <div id="report-content"></div>
+
+    <script src="templates/renderMedical.js"></script>
+    <script src="templates/renderWorker.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

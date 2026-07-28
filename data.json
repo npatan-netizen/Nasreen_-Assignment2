@@ -1,0 +1,268 @@
+{
+  "workers": {
+    "nasreen": {
+      "workerKey": "nasreen",
+      "workerName": "Nasreen",
+      "claimNumber": "55881234",
+      "role": "Software Engineer",
+      "appId": "904512",
+      "submitDateTime": "June 12, 2024 14:40",
+      "rtwStatus": "not-returned",
+      "rtwDate": "",
+      "workingStatus": "other",
+      "workingOther": "Work from home — IT support shifts only",
+      "rtwGoing": "Slow improvement; still cannot sit long hours.",
+      "expectRtwDate": "July 15, 2024",
+      "rtwConcerns": "Long commute on Outer Ring Road and standing at desk.",
+      "contactName": "Ananya Rao",
+      "contactDate": "June 08, 2024",
+      "recoveryStatus": "not-fully",
+      "recoveryComments": "Lower back strain after warehouse lift at Whitefield site.",
+      "painLevel": "7",
+      "medTreatment": "continuing",
+      "medProviderType": "Orthopaedic Physiotherapist",
+      "lastMedDate": "June 10, 2024",
+      "lastMedName": "Manipal Hospital, Old Airport Road, Bangalore",
+      "nextMedDate": "June 17, 2024",
+      "nextMedName": "Manipal Hospital, Old Airport Road, Bangalore",
+      "chiroFreq": "3 times per week",
+      "medication": "taking",
+      "medicationName": "Aceclofenac 100mg + Thiocolchicoside",
+      "exercises": "doing",
+      "exercisesList": "Pelvic tilts, cat-cow stretches, and core bracing as advised by physio.",
+      "additionalInfo": "Treating at Bangalore clinics; parking receipts from Apollo and Fortis attached.",
+      "prescriptionDrugs": [
+        [
+          "Aceclofenac 100mg",
+          "May 20, 2024",
+          "May 20, 2024",
+          "Dr. K. Ramesh (Orthopaedics)",
+          "₹180.00"
+        ],
+        [
+          "Pantoprazole 40mg",
+          "May 20, 2024",
+          "May 20, 2024",
+          "Dr. K. Ramesh (Orthopaedics)",
+          "₹95.00"
+        ],
+        [
+          "Gabapentin 100mg",
+          "June 01, 2024",
+          "June 01, 2024",
+          "Dr. Meera Krishnan",
+          "₹210.00"
+        ]
+      ],
+      "otcDrugs": [
+        [
+          "Volini Gel",
+          "May 22, 2024",
+          "₹145.00",
+          "Apollo Pharmacy, Indiranagar",
+          "Muscle pain"
+        ],
+        [
+          "Crocin Advance",
+          "June 03, 2024",
+          "₹35.00",
+          "MedPlus, Koramangala",
+          "Fever / pain"
+        ]
+      ],
+      "medicalSupplies": [
+        [
+          "Lumbar support belt",
+          "May 21, 2024",
+          "Yes",
+          "Dr. K. Ramesh",
+          "₹890.00",
+          "Surgical House, Jayanagar"
+        ],
+        [
+          "Elastic crepe bandage",
+          "May 25, 2024",
+          "No",
+          "",
+          "₹120.00",
+          "Apollo Pharmacy, Indiranagar"
+        ]
+      ],
+      "parking": [
+        [
+          "Manipal Hospital, 98 Old Airport Road, Bangalore",
+          "June 03, 2024",
+          "₹80.00",
+          "No",
+          ""
+        ],
+        [
+          "Apollo Hospitals, Bannerghatta Road, Bangalore",
+          "June 07, 2024",
+          "₹60.00",
+          "Yes",
+          "B-118"
+        ],
+        [
+          "Fortis Hospital, Bannerghatta Road, Bangalore",
+          "June 10, 2024",
+          "₹100.00",
+          "No",
+          ""
+        ]
+      ],
+      "mileageAppointments": [
+        [
+          "June 03, 2024",
+          "Manipal Hospital, 98 Old Airport Road, Bangalore 560017",
+          "Tech Park, Whitefield, Bangalore 560066",
+          "28 km"
+        ],
+        [
+          "June 10, 2024",
+          "Fortis Hospital, Bannerghatta Road, Bangalore 560076",
+          "Tech Park, Whitefield, Bangalore 560066",
+          "32 km"
+        ]
+      ],
+      "busTaxiFares": [
+        [
+          "June 07, 2024",
+          "HSR Layout Sector 2, Bangalore 560102",
+          "Apollo Hospitals, Bannerghatta Road, Bangalore 560076",
+          "Taxi",
+          "₹350.00"
+        ],
+        [
+          "June 12, 2024",
+          "Koramangala 5th Block, Bangalore 560095",
+          "Aster CMI Hospital, Hebbal, Bangalore 560092",
+          "Bus",
+          "₹45.00"
+        ]
+      ]
+    },
+    "jyothi": {
+      "workerKey": "jyothi",
+      "workerName": "Jyothi",
+      "claimNumber": "77441122",
+      "role": "AI Engineer",
+      "appId": "904221",
+      "submitDateTime": "June 18, 2024 11:30",
+      "rtwStatus": "full-red",
+      "rtwDate": "",
+      "workingStatus": "mod-reg",
+      "workingOther": "Sitting duties only, no lifting",
+      "rtwGoing": "Improving with rest, but still needs gradual return.",
+      "expectRtwDate": "July 10, 2024",
+      "rtwConcerns": "Long bus commute from Hyderabad and carrying paperwork.",
+      "contactName": "Sushma Reddy",
+      "contactDate": "June 15, 2024",
+      "recoveryStatus": "not-fully",
+      "recoveryComments": "Lower back pain remains after a workplace fall at the telecom office.",
+      "painLevel": "6",
+      "medTreatment": "continuing",
+      "medProviderType": "Physiotherapist",
+      "lastMedDate": "June 14, 2024",
+      "lastMedName": "Apollo Cradle Royale, Jubilee Hills, Hyderabad",
+      "nextMedDate": "June 20, 2024",
+      "nextMedName": "Apollo Cradle Royale, Jubilee Hills, Hyderabad",
+      "chiroFreq": "2 times per week",
+      "medication": "taking",
+      "medicationName": "Ibuprofen 400mg",
+      "exercises": "doing",
+      "exercisesList": "Wall squats, pelvic tilts and gentle walking.",
+      "additionalInfo": "Telugu-speaking worker with local clinic records and pharmacy receipts.",
+      "prescriptionDrugs": [
+        [
+          "Ibuprofen 400mg",
+          "June 10, 2024",
+          "June 10, 2024",
+          "Dr. K. Narayana",
+          "₹120.00"
+        ],
+        [
+          "Methylcobalamin 1500mcg",
+          "June 10, 2024",
+          "June 10, 2024",
+          "Dr. K. Narayana",
+          "₹90.00"
+        ]
+      ],
+      "otcDrugs": [
+        [
+          "Volini Spray",
+          "June 12, 2024",
+          "₹160.00",
+          "Apollo Pharmacy, Jubilee Hills",
+          "Back pain"
+        ],
+        [
+          "Crocin",
+          "June 14, 2024",
+          "₹30.00",
+          "MedPlus, Banjara Hills",
+          "Pain relief"
+        ]
+      ],
+      "medicalSupplies": [
+        [
+          "Lumbar support belt",
+          "June 13, 2024",
+          "Yes",
+          "Dr. K. Narayana",
+          "₹780.00",
+          "Apollo Pharmacy, Jubilee Hills"
+        ],
+        [
+          "Elastic knee support",
+          "June 16, 2024",
+          "No",
+          "",
+          "₹220.00",
+          "MedPlus, Banjara Hills"
+        ]
+      ],
+      "parking": [
+        [
+          "Apollo Cradle Royale, 52-14-1, Jubilee Hills, Hyderabad",
+          "June 14, 2024",
+          "₹70.00",
+          "Yes",
+          "A-105"
+        ],
+        ["MedPlus Pharmacy, Banjara Hills", "June 16, 2024", "₹40.00", "No", ""]
+      ],
+      "mileageAppointments": [
+        [
+          "June 14, 2024",
+          "Apollo Cradle Royale, Jubilee Hills, Hyderabad",
+          "Telecom Office, Hitech City, Hyderabad",
+          "18 km"
+        ],
+        [
+          "June 20, 2024",
+          "Apollo Cradle Royale, Jubilee Hills, Hyderabad",
+          "Physio Center, Gachibowli, Hyderabad",
+          "22 km"
+        ]
+      ],
+      "busTaxiFares": [
+        [
+          "June 15, 2024",
+          "Kukatpally, Hyderabad",
+          "Apollo Cradle Royale, Jubilee Hills, Hyderabad",
+          "Bus",
+          "₹25.00"
+        ],
+        [
+          "June 16, 2024",
+          "Dilsukhnagar, Hyderabad",
+          "MedPlus, Banjara Hills, Hyderabad",
+          "Taxi",
+          "₹180.00"
+        ]
+      ]
+    }
+  }
+}
