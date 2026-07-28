@@ -41,17 +41,29 @@ Rather than creating separate HTML pages for different forms, **both the Medical
 <img width="608" height="967" alt="image" src="https://github.com/user-attachments/assets/1221ea18-f6b1-4d84-bb42-fb5935da4253" />
 
 
-![Medical Expense Page 2](docs/samples/medical-expense-page2.png)
+![Medical Expense Page 2]
+
+
+<img width="667" height="750" alt="image" src="https://github.com/user-attachments/assets/2d6bcfad-2fbb-4fd3-a74a-58f4bef0c654" />
 
 ---
 
 ## Worker Progress Report
 
-![Worker Progress Page 1](docs/samples/worker-progress-page1.png)
+![Worker Progress Page 1]
 
-![Worker Progress Page 2](docs/samples/worker-progress-page2.png)
+<img width="565" height="905" alt="image" src="https://github.com/user-attachments/assets/b9070024-df39-48a7-9cb4-b572319adfb4" />
 
-![Worker Progress Page 3](docs/samples/worker-progress-page3.png)
+
+![Worker Progress Page 2]
+
+<img width="577" height="747" alt="image" src="https://github.com/user-attachments/assets/1d20f53e-a6c8-48dc-a533-33e5fd2fd1b0" />
+
+
+![Worker Progress Page 3]
+
+<img width="595" height="740" alt="image" src="https://github.com/user-attachments/assets/b7d87ab5-eb56-4693-855f-e78155256122" />
+
 
 ---
 
