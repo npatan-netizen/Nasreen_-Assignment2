@@ -2,6 +2,8 @@
 
 A dynamic browser-based application that loads worker data from a backend JSON file and renders professional reports using compiled Pug templates.
 
+<img width="823" height="1020" alt="Image" src="https://github.com/user-attachments/assets/5b75338b-e7d0-430e-a233-ce5cb451aa14" />
+
 ## Application Design: Two Forms, One Sheet
 
 A major feature of this project is its **Single Page Application (SPA)** architecture. 
