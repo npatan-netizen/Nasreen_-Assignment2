@@ -2,7 +2,7 @@
 
 A dynamic browser-based application that loads worker data from a backend JSON file and renders professional WCB reports using **compiled Pug templates**.
 
-<img width="823" height="1020" alt="Application Preview" src="https://github.com/user-attachments/assets/5b75338b-e7d0-430e-a233-ce5cb451aa14" />
+
 
 ---
 
@@ -10,7 +10,7 @@ A dynamic browser-based application that loads worker data from a backend JSON f
 
 **Google Drive Link**
 
-Paste your demo video link here.
+https://drive.google.com/file/d/160pSTGK1U2DUY6UEUylchUuHxqzouVqE/view?usp=drive_link
 
 ---
 
@@ -35,7 +35,11 @@ Rather than creating separate HTML pages for different forms, **both the Medical
 
 ## Medical & Travel Expense Request
 
-![Medical Expense Page 1](docs/samples/medical-expense-page1.png)
+![Medical Expense Page 1]
+
+
+<img width="608" height="967" alt="image" src="https://github.com/user-attachments/assets/1221ea18-f6b1-4d84-bb42-fb5935da4253" />
+
 
 ![Medical Expense Page 2](docs/samples/medical-expense-page2.png)
 
