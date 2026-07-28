@@ -1,0 +1,67 @@
+mixin wcbHeader(title, claimNumber, badge, workerName, workerRole)
+  header.form-header
+    .logo-section
+      img.wcb-logo(src="assets/WCB_of_Manitoba_logo.png", alt="WCB Workers Compensation Board of Manitoba")
+    .address-section
+      p 333 Broadway
+      p Winnipeg, MB R3C 4W3
+      p Phone: (204) 954-4321
+      p Toll Free: 1-855-954-4321
+      p wcb.mb.ca
+    .title-section
+      h1= title
+      if workerName
+        p.report-worker
+          | Worker: 
+          span.blue-data= workerName
+      if workerRole
+        p.report-role
+          | Role: 
+          span.blue-data= workerRole
+      .claim-container
+        .claim-box Claim No. 
+          span.blue-data= claimNumber
+        if badge
+          .wp-box= badge
+
+mixin pageFooter(appId, submitted, pageLabel)
+  footer.form-footer
+    .footer-left Worker App ID: 
+      span.blue-data= appId
+    .footer-right
+      | Submitted: 
+      span.blue-data= submitted
+      br
+      span.page-number= pageLabel
+
+mixin fillLine(value, label, widthClass)
+  .inline-input(class=widthClass)
+    span.line-value.blue-data= value ? value : '\u00a0'
+    if label
+      span.input-label= label
+
+mixin dataTable(columns, rows)
+  table.expense-table
+    thead
+      tr
+        each col in columns
+          th= col
+    tbody
+      if rows && rows.length
+        each row in rows
+          tr
+            each cell in row
+              td.blue-data= cell
+      else
+        tr
+          td.blue-data(colspan=columns.length) —
+
+mixin expenseSection(heading, columns, rows, note)
+  section.expense-section
+    h2.section-heading= heading
+    if note
+      p.section-note= note
+    +dataTable(columns, rows)
+
+block medical
+block worker

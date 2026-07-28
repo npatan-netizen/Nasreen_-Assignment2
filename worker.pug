@@ -1,0 +1,113 @@
+include forms.pug
+
+block worker
+  .page-container
+    +wcbHeader('Worker Progress Report', data.claimNumber, 'WP', selectedWorker, data.role)
+    p.intro-text
+      span.blue-data= data.workerName
+      |  provided the following updates in relation to their claim:
+    h2 Return to Work
+    .form-box
+      span.select-one-label Select one:
+      .checkbox-group.vertical
+        label.checkbox-item
+          input(type="checkbox", checked=(data.rtwStatus === "not-missed"), disabled)
+          span I have not missed time from work
+        label.checkbox-item
+          input(type="checkbox", checked=(data.rtwStatus === "not-returned"), disabled)
+          span I have not returned to work
+        label.checkbox-item
+          input(type="checkbox", checked=(data.rtwStatus === "returned"), disabled)
+          span I returned to work on:
+          +fillLine(data.rtwDate, 'Date', 'medium-line')
+    .form-box
+      span.select-one-label I am working:
+      .checkbox-group
+        label.checkbox-item
+          input(type="checkbox", checked=(data.workingStatus === "full-reg"), disabled)
+          span Full duties, regular hours
+        label.checkbox-item
+          input(type="checkbox", checked=(data.workingStatus === "full-red"), disabled)
+          span Full duties, reduced hours
+        label.checkbox-item
+          input(type="checkbox", checked=(data.workingStatus === "mod-reg"), disabled)
+          span Modified duties, regular hours
+        label.checkbox-item
+          input(type="checkbox", checked=(data.workingStatus === "mod-red"), disabled)
+          span Modified duties, reduced hours
+        label.checkbox-item
+          input(type="checkbox", checked=(data.workingStatus === "other"), disabled)
+          span Other:
+          +fillLine(data.workingOther, '', 'long-line')
+    .form-box
+      span.select-one-label My return to work is going:
+      p.textarea-display.blue-data= data.rtwGoing
+    .inline-form-row
+      | I expect to return to work on:
+      +fillLine(data.expectRtwDate, 'Date', 'medium-line')
+    .form-box
+      span.select-one-label I have the following concerns about returning to work:
+      p.textarea-display.blue-data= data.rtwConcerns
+    .inline-form-row.spaced
+      | I was most recently in contact with:
+      +fillLine(data.contactName, '(Name of employer contact)', 'medium-line')
+      | on
+      +fillLine(data.contactDate, 'Date', 'medium-line')
+    h2 Recovery
+    .form-box
+      span.select-one-label Select one:
+      .checkbox-group.vertical
+        label.checkbox-item
+          input(type="checkbox", checked=(data.recoveryStatus === "not-fully"), disabled)
+          span I have not fully recovered from my workplace injury.
+        label.checkbox-item
+          input(type="checkbox", checked=(data.recoveryStatus === "fully"), disabled)
+          span I have fully recovered from my workplace injury.
+    .form-box
+      span.select-one-label I have provided the following comments about my recovery:
+      p.textarea-display.blue-data= data.recoveryComments
+    +pageFooter(data.appId, data.submitDateTime, 'Page 1 of 3')
+  .page-container
+    .pain-scale-section
+      p I rate my current pain/discomfort on a scale of 1-10, where 1 is no pain and 10 is severe pain out of 10.
+      .pain-options
+        - for (var n = 1; n <= 10; n++)
+          label.pain-box
+            input(type="checkbox", checked=(String(data.painLevel) === String(n)), disabled)
+            | #{n}
+    .form-box
+      span.select-one-label Medical treatment status
+      p.textarea-display.blue-data= data.medTreatment
+    .form-box
+      span.select-one-label Provider type
+      p.textarea-display.blue-data= data.medProviderType
+    .inline-form-row
+      | Last appointment:
+      +fillLine(data.lastMedDate, '', 'medium-line')
+      +fillLine(data.lastMedName, 'Provider', 'long-line')
+    .inline-form-row
+      | Next appointment:
+      +fillLine(data.nextMedDate, '', 'medium-line')
+      +fillLine(data.nextMedName, 'Provider', 'long-line')
+    .form-box
+      span.select-one-label Chiropractor / physiotherapist frequency
+      p.textarea-display.blue-data= data.chiroFreq
+    .form-box
+      span.select-one-label Medication and exercises
+      p.textarea-display.blue-data= data.medicationName
+      p.textarea-display.blue-data= data.exercisesList
+    .form-box
+      span.select-one-label Additional information
+      p.textarea-display.blue-data= data.additionalInfo
+    +pageFooter(data.appId, data.submitDateTime, 'Page 2 of 3')
+  .page-container
+    .certify-section
+      .certify-item
+        span.checkbox-mark.checked
+        .certify-text I certify that the information provided is true and correct.
+      .certify-item
+        span.checkbox-mark.checked
+        .certify-text I understand that the
+          a.privacy-link(href="#") Privacy Notice
+          |  applies to this information.
+    +pageFooter(data.appId, data.submitDateTime, 'Page 3 of 3')

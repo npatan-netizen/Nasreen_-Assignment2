@@ -1,0 +1,24 @@
+include forms.pug
+
+block medical
+  .page-container.expense-page
+    +wcbHeader('Medical & Travel Expense Request', data.claimNumber, null, selectedWorker, data.role)
+    p.intro-text
+      span.blue-data= data.workerName
+      |  requested reimbursement for the following medical and/or travel expenses:
+    +expenseSection('Prescription Drugs', ['Drug Name', 'Prescription Date', 'Date Purchased', 'Healthcare Provider Name', 'Paid Amount'], data.prescriptionDrugs)
+    +expenseSection('Over-the-Counter Drugs', ['Drug Name', 'Date Purchased', 'Paid Amount', "Seller's Name", 'Reason for Purchasing'], data.otcDrugs)
+    +expenseSection('Bandages, Braces or Other Medical Supplies', ['Item Purchased', 'Date Purchased', 'Was this Prescribed?', 'Healthcare Provider Name', 'Paid Amount', "Seller's Name"], data.medicalSupplies)
+    +expenseSection('Parking for Medical Appointments', ['Address of Healthcare Provider/Medical Facility', 'Date', 'Paid Amount', 'Meter Used?', 'Meter Number'], data.parking)
+    +pageFooter(data.appId, data.submitDateTime, 'Page 1 of 2')
+  .page-container.expense-page
+    +expenseSection('Mileage to Medical Appointments', ['Appointment Date', 'Address of Healthcare Provider/Medical Facility', 'Address of Workplace', 'Number of km (Round Trip)'], data.mileageAppointments, 'The WCB will generally reimburse only those transportation costs which are in excess of costs that would be incurred by the worker while travelling to and from work.')
+    +expenseSection('Bus or Taxi Fare for Medical Appointments*', ['Appointment Date', 'Address of Starting Point', 'Address of Healthcare Provider/Medical Facility', 'Bus or Taxi (indicate one)', 'Total Fare Paid'], data.busTaxiFares, '*Note: Pre-approval is required from your WCB representative to claim taxi fare(s).')
+    .certify-section.medical-privacy
+      .certify-item
+        span.checkbox-mark.checked
+        .certify-text
+          | I understand that the
+          a.privacy-link(href="#") Privacy Notice
+          |  applies to the personal information collected in this document.
+    +pageFooter(data.appId, data.submitDateTime, 'Page 2 of 2')
